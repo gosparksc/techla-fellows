@@ -7,7 +7,7 @@ body {
 
 @font-face {
     font-family: circular;
-    src: url(CircularStd-Bold.ttf);
+    src: url(CircularStd-Bold.otf);
 }
 
 .element {
