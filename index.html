@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Fellows</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="typed.js-master/js/typed.js"></script>
+        <script>
+          $(function(){
+              $(".element").typed({
+                strings: ["Griff^100ith Observatory.", "Santi", "Santa Monica.", "a new perspective.", "Los Angeles."],
+                typeSpeed: 8,
+                startDelay: 1500,
+                // if we want this to loop once, uncomment the code below.
+                // loop: true,
+                // loopCount: 2
+              });
+          });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+          <img id="logo" src="techla-weblogo.png">
+            <h1>Push code from <div class="element"></div></h1>
+            <p><em>TechLA Fellows</em> is looking for exceptionally talented undergraduate student computer science, design, or business to work as interns at budding startups in LA. </p>
+            <div class="submission-container">
+              <input type="text" name="email" id="email" placeholder="Enter your email for updates!">
+              <input type="submit" value="Submit" id="email-button">
+            </div>
+        </div>
+    </body>
+</html>
