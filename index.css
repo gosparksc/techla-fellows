@@ -5,6 +5,11 @@ body {
   margin: 0px;
 }
 
+@font-face {
+    font-family: Circular Std;
+    src: url(CircularStd-Bold.ttf);
+}
+
 .element {
   display: inline-block;
 }
