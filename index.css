@@ -50,6 +50,7 @@ body {
 
 h1, p {
   color: white;
+  font-family: Helvetica Neue;
   margin: 0;
 }
 
@@ -58,6 +59,10 @@ h1 {
   font-size: 32px;
   letter-spacing: .5px;
   margin-bottom: 5px;
+}
+
+.special-h1 {
+  font-family: CircularStd-Bold;
 }
 
 p {
