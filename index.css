@@ -5,6 +5,14 @@ body {
   margin: 0px;
 }
 
+form {
+  display: inline-block !important;
+}
+
+.email-container {
+  display: inline-block;
+}
+
 @font-face {
     font-family: CircularStd-Bold;
     src: url(CircularStd-Bold.otf);
@@ -73,13 +81,13 @@ p {
 }
 
 #email, #email-button {
-  margin-top: 25px;
   padding: 10px;
   font-size: 15px;
   border: none;
   opacity: .5;
   color: #1e4687;
   width: 300px;
+  cursor: pointer;
 }
 
 #email:focus {
@@ -87,11 +95,58 @@ p {
   opacity: .6;
 }
 
-#email-button {
+.fuck-up {
+  background: transparent;
+  border: none;
+}
+
+.email-button {
   background: white;
   opacity: 1;
   color: #333333;
   width: 100px;
+  outline: none;
+  height: 37px;
+  font-family: Helvetica;
+  font-size: 16px;
+  border: none;
+  padding-top: 5px;
+}
+
+#email-button:hover {
+  background: lightgrey;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  font-family: Helvetica;
+  font-weight: normal !important;
+  background: #d33d3d !important;
+  padding: 10px !important;
+  width: 300px;
+  margin: 0 0 0 0 !important;
+}
+
+#mce-success-response, #mce-error-response {
+  font-family: Helvetica;
+  color: green;
+  background: white;
+  padding: 10px;
+  margin-top: 10px;
+  width: 403px;
+}
+
+#mce-error-response {
+  color: red;
+}
+
+
+input {
+  cursor: pointer;
+}
+
+.submission-container {
+  cursor: pointer;
+  display: inline;
 }
 
 @media (max-width: 950px) {
@@ -140,5 +195,9 @@ p {
   #email-button {
     margin-top: 6px;
     width: 80px;
+  }
+
+  #mce-success-response, #mce-error-response {
+    width: 303px;
   }
 }
