@@ -201,3 +201,15 @@ input {
     width: 303px;
   }
 }
+
+@media (max-width: 450px) {
+  p {
+    font-size: 15px;
+    width: 250px;
+  }
+
+  h1 {
+    font-size: 20px;
+    width: 250px;
+  }
+}
