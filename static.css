@@ -29,6 +29,11 @@ h2 {
 	font: bold 1.3em/0.6em 'Circular Bold';
 }
 
+.article {
+	width: 40px !important;
+	margin: 0px 10px 0px 30px;
+}
+
 .header {
 	background: #fff url('img/header.jpg') no-repeat;
 	background-position: 50% 40%;
@@ -61,6 +66,7 @@ h2 {
 	width: 90%;
 	max-width: 800px;
 	margin: 30px auto 60px auto;
+	margin-bottom: 100px;
 }
 
 nav {
@@ -88,18 +94,28 @@ nav {
 	display: block;
 }
 
+.bold {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.quote {
+	opacity: .5;
+}
+
 .bar {
-	height: 30px;
+	height: 10px;
 	display: block;
 	position: relative;
 	margin: 0;
-	background: #777;
+	background: transparent;
+	line-height: .5em;
 }
 
-	.bluep, .orangep, .grayp { 
-		background: #5fb6ce; 
-		width: 33.3%; 
-		height: 30px;
+	.bluep, .orangep, .grayp {
+		background: #5fb6ce;
+		width: 33.3%;
+		height: 10px;
 		display: inline-block;
 	}
 	.orangep { background: #f4855e; }
@@ -113,22 +129,71 @@ nav {
 }
 
 	.partner img { width: 140px; vertical-align: middle; }
-	.partner p { 
+	.partner p {
 		display: inline-block;
 		vertical-align: middle;
 		width: 40%;
-		padding: 20px; 
+		padding: 20px;
 	}
 	.partner:hover {
 		border-bottom: 2px solid #bbb;
 	}
 
+//FOOTER
+footer {
+	background-color: black;
+}
+
+.footer-container {
+	width: 100%;
+	height: 100%;
+	background-color: black !important;
+}
+
+.footer-content {
+	width: 90%;
+	margin: auto;
+}
+
+.footer-content img {
+	margin: 30px 30px 30px 0px;
+	width: 250px;
+}
+
+.footer-logo {
+	display: inline;
+}
+
+.media-links {
+	float: right;
+	display: inline;
+}
+
+.media-links img {
+	margin-top: 45px;
+	width: 40px;
+	opacity: .7;
+	transition: 1s;
+}
+
+.media-links img:hover {
+	opacity: 1;
+}
+
+.media-links .small {
+	width: 32px;
+}
+
+.media-links .smaller {
+	width: 34px;
+}
+
 @media (min-width: 680px) {
 	.header {
 		padding-bottom: 60px;
 	}
-	.logo { 
-		width: 300px; 
+	.logo {
+		width: 300px;
 		display: inline-block;
 	}
 	.navlinks {
@@ -138,7 +203,51 @@ nav {
 	h2 { font: bold 2.2em/1em 'Circular Bold'; }
 	p { font-size: 1em; }
 
-	.partner p { 
+	.partner p {
 		width: 60%;
+	}
+}
+
+@media (max-width: 540px) {
+	.home-about {
+		width: 85%;
+		margin: auto;
+	}
+
+	.hidden {
+		display: block;
+		width: 85%;
+		margin: auto;
+	}
+
+	.home-partners h1 {
+		width: 83%;
+		margin-bottom: -20px;
+	}
+
+	.not-hidden {
+		display: none;
+	}
+
+	.media-links {
+		display: none;
+	}
+
+	.footer-content {
+		text-align: center;
+	}
+
+	.partner p {
+		width: 80% !important;
+	}
+
+	.article {
+		margin-top: 30px;
+		margin-bottom: -20px;
+		margin-left: 20px;
+	}
+
+	.partner-logo {
+		margin-bottom: -60px;
 	}
 }
