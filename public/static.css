@@ -78,7 +78,7 @@ nav {
 		display: inline-block;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		margin: 20px 20px 0 0;
+		margin: 10px 20px 0 0;
 		color: #aaa;
 	}
 
@@ -123,7 +123,8 @@ nav {
 
 .partner {
 	background: #fff;
-	border-bottom: 2px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 0 2px #ddd;
 	margin-bottom: 20px;
 	display: block;
 }
@@ -136,10 +137,11 @@ nav {
 		padding: 20px;
 	}
 	.partner:hover {
-		border-bottom: 2px solid #bbb;
+		border-bottom: 1px solid #bbb;
+		box-shadow: 0 0 2px #bbb;
 	}
 
-//FOOTER
+/* FOOTER */
 footer {
 	background-color: black;
 }
@@ -190,11 +192,17 @@ footer {
 
 @media (min-width: 680px) {
 	.header {
-		padding-bottom: 60px;
+		padding: 100px 0 60px 0;
 	}
 	.logo {
-		width: 300px;
+		width: 250px;
 		display: inline-block;
+	}
+	nav {
+		position: fixed;
+		width: 96%;
+		z-index: 101;
+		box-shadow: 0 0 2px #ddd;
 	}
 	.navlinks {
 		float: right;

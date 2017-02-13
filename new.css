@@ -108,11 +108,11 @@ nav {
 
 	.logos {
 		width: 100%;
-		max-width: 600px;
+		max-width: 750px;
 		display: block;
 		margin: auto;
-		margin-top: 80px;
-		margin-bottom: -20px;
+		margin-top: 120px;
+		margin-bottom: 50px;
 		opacity: .7;
 		filter: grayscale(100%);
 		transition: .5s;
@@ -134,6 +134,17 @@ h1 {
 
 h2 {
 	font: bold 1.3em/0.6em 'Circular Bold';
+}
+
+//ABOUT - FACES
+.face-row {
+	max-width: 850px;
+	width: 90%;
+	height: 150px;
+}
+
+.face-row img {
+	height: 50px;
 }
 
 //FOOTER
@@ -235,8 +246,9 @@ footer {
 		height: 80vh;
 	}
 	.logo {
-		width: 300px;
+		width: 250px;
 		display: inline-block;
+		margin-top: 5px;
 	}
 	.navlinks {
 		float: right;
