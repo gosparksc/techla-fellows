@@ -8,6 +8,7 @@ var defaultOptions = {
   },
   render: function (date) {
     this.el.innerHTML =
+                        this.leadingZeros(date.days) + " DAYS, " +
                         this.leadingZeros(date.hours) + " HOURS, " +
                         this.leadingZeros(date.min) + " MINUTES. "
   }
