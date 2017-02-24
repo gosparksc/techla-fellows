@@ -11,8 +11,11 @@
         <meta property="og:image" content="http://fellows.tech.la/img/techla-stacked.png" />
         <title>TechLA Fellows</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="new.css">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery.countdown.js"></script>
         <script src="typed.js-master/js/typed.js"></script>
         <script>
@@ -36,12 +39,22 @@
             });
           });
         </script>
+    <script>
+        $(document).ready(function (){
+            $("#chevron").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#chevron").offset().top
+                }, 800);
+            });
+        });
+    </script>
     </head>
-    <a href="https://sparksc.typeform.com/to/HK93FY" target="_blank"><div class="banner">
+    <body>
+    <div class="banner">
       <div class="banner-text">
           <h1><span id="counter-text">APPLICATION CLOSES IN </span><span id="counter"></span></h1>
       </div>
-    </div></a>
+    </div>
       <nav>
         <a href="/"><img class="logo" src="img/techla-weblogo.png"></a>
         <div class="navlinks">
@@ -50,10 +63,15 @@
           <a href="https://sparksc.typeform.com/to/HK93FY" target="_blank" class="apply">Apply</a>
         </div>
       </nav>
+        
+        <section class="splash">
         <div class="home">
             <h1 class="special-h1"><div class="element"></div></h1>
             <p class="intro">TechLA Fellows is looking for exceptionally talented undergraduate students in computer science, design, and business to work as interns at budding startups in LA.</p>
         </div>
+            <div class="chevron"><i class="fa fa-chevron-down" id="chevron"></i></div>
+        </section>
+        <section id="about">
         <div class="home-about">
           <img class="circle" src="img/circle.png" alt="">
           <div class="bubble">
@@ -78,12 +96,20 @@
           </div>
           <img class="skyline" src="img/skyline.png" alt="">
         </div>
+        </section>
+        
         <div class="bar"><div class="bluep"></div><div class="orangep"></div><div class="grayp"></div></div>
         <div class="home-partners">
           <h1>Our Partners</h1>
           <a href="/partners.html"><img class="logos not-hidden" src="img/companies.png" alt=""></a>
           <a class="hidden" href="/partners.html"><img class="logos" src="img/companies-narrow.png" alt=""></a>
         </div>
+        
+        <div id="contact">
+        <h1>Questions?</h1>
+        <p>E-mail us at <strong>techlafellows@gmail.com</strong></p>
+        </div>
+        
       <footer>
         <div class="footer-container">
           <div class="footer-content">
@@ -92,9 +118,9 @@
                 <a href="http://www.bruinentrepreneurs.org/" target="_blank"><img src="img/presentedby-bruin.png"></a>
             </div>
             <div class="media-links">
-              <a href="https://twitter.com/gosparksc?lang=en" target="_blank"><img src="img/twitter.png"></a>
-              <a href="https://www.facebook.com/gosparksc/" target="_blank"><img class="small" src="img/fb.png"></a>
-              <a href="https://www.linkedin.com/company/3758371?trk=prof-exp-company-name" target="_blank"><img class="smaller" src="img/linkedin.png"></a>
+              <a href="https://twitter.com/gosparksc?lang=en" target="_blank"><img class="twitter" src="img/twitter.png"></a>
+              <a href="https://www.facebook.com/techlafellowship/" target="_blank"><img src="img/fb.png"></a>
+              <a href="https://www.linkedin.com/company/3758371?trk=prof-exp-company-name" target="_blank"><img src="img/linkedin.png"></a>
             </div>
           </div>
         </div>

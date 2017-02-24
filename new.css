@@ -63,9 +63,20 @@ nav {
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		margin: 20px 20px 0 0;
+        opacity: 0.8;
+        transition: 0.2s;
+        -moz-transition: 0.2s;
 	}
 
 	.apply { color: #ffd2c2 !important; font-weight: bold; }
+
+    .navlinks a:hover {
+		display: inline-block;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin: 20px 20px 0 0;
+        opacity: 1;
+	}
 
 .logo {
 	width: 200px;
@@ -74,6 +85,32 @@ nav {
 
 .intro {
 	max-width: 470px;
+}
+
+.chevron {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.chevron:hover {
+	opacity: 1;
+}
+
+.chevron>i {
+	margin-bottom: 20px;
+	font-size: 2rem;
+	transition: 0.2s ease;
+}
+.chevron>i:hover {
+	/*color: #FDBD10;*/
+	opacity: 1;
+	text-shadow: 0 0 2px #fff;
+	cursor: pointer;
+	transition: 0.2s ease;
 }
 
 .home-about {
@@ -129,12 +166,14 @@ nav {
 .home-partners {
 	background: #fff;
 	padding: 80px 20px;
+    text-align: center;
 }
 
 	.home-partners h1 {
+        font-size: 36px;
 		color: #4f4f4f;
 		max-width: 600px;
-		margin: 0 auto 30px auto;
+		margin: auto;
 	}
 
 	.logos {
@@ -176,6 +215,14 @@ h2 {
 
 .face-row img {
 	height: 50px;
+}
+
+#contact{
+    text-align: center;
+    padding-top: 20px;
+    height: 150px;
+    background-color: #5fb6ce;
+    border-bottom: 10px solid #f4855e;
 }
 
 //FOOTER
@@ -223,23 +270,20 @@ footer {
 }
 
 .media-links img {
-	margin-top: 25px;
+	margin-top: 30px;
     margin-bottom: auto;
-	width: 40px;
+	width: 28px;
 	opacity: .7;
 	transition: 1s;
+    -moz-transition: 1s;
 }
 
 .media-links img:hover {
 	opacity: 1;
 }
 
-.media-links .small {
-	width: 32px;
-}
-
-.media-links .smaller {
-	width: 34px;
+.media-links .twitter{
+    width: 35px;
 }
 
 @media (min-width: 480px) {
@@ -256,7 +300,10 @@ footer {
 }
 
 @media (max-width: 540px) {
-	.home-about {
+	
+    
+    
+    .home-about {
 		width: 85%;
 		margin: auto;
 	}
@@ -266,6 +313,9 @@ footer {
 		width: 85%;
 		margin: auto;
 	}
+    .chevron>i {
+	margin-bottom: 20px;
+    }
 
 	.home-partners h1 {
 		width: 83%;
@@ -297,6 +347,8 @@ footer {
 		margin: 40px 100px;
 		height: 80vh;
 	}
+    
+    
 	.logo {
 		width: 250px;
 		display: inline-block;
@@ -305,6 +357,9 @@ footer {
 	.navlinks {
 		float: right;
 	}
+    .chevron>i {
+	margin-bottom: 150px;
+    }
 	.circle {
 		position: relative;
 		z-index: 0;
@@ -366,12 +421,22 @@ footer {
 }
 @media (min-width: 740px) {
 	.home { height: 105vh; }
+    .chevron>i {
+	margin-bottom: 20px;
+    }
+    
 }
 @media (min-width: 990px) {
 	body { background-size: 120vw; }
 }
+    .banner{
+        height: 75px;
+        }
 @media (min-width: 1100px) {
 	body { background-size: 100vw; }
+    .banner{
+        height: 60px;
+        }
 }
 
 /* HOMEPAGE */
