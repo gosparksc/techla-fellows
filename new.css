@@ -309,6 +309,10 @@ footer {
         visibility: hidden;
     }
     
+    .navlinks a {
+		margin: 15px 15px 0px 0;
+	}
+    
     .home-about {
 		width: 85%;
 		margin: auto;
@@ -433,6 +437,27 @@ footer {
 	h1 { font-size: 2em; }
 	h2 { font: bold 2.2em/1em 'Circular Bold'; }
 	p { font-size: 1.25em; }
+}
+
+@media (max-width: 680px) {
+    .home{
+        margin-bottom: 80px;
+    }
+    .banner {
+        visibility: hidden;
+        margin-bottom: -80px;
+    }
+
+    .banner h1 {
+        visibility: hidden;
+    }
+
+    .banner-text {
+        visibility: hidden;
+    }
+    .chevron>i {
+	margin-bottom: 40px;
+    }
 }
 @media (min-width: 740px) {
 	.home { height: 105vh; }
