@@ -13,6 +13,7 @@
 	height: 60px;
 	background-color: #ff7e53;
 	border-bottom: 3px solid #ce4e2c;
+    margin-bottom: 0px;
 }
 
 .banner h1 {
@@ -71,16 +72,13 @@ nav {
 	.apply { color: #ffd2c2 !important; font-weight: bold; }
 
     .navlinks a:hover {
-		display: inline-block;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		margin: 20px 20px 0 0;
         opacity: 1;
 	}
 
 .logo {
 	width: 200px;
 	display: block;
+    clear: none;
 }
 
 .intro {
@@ -295,7 +293,9 @@ footer {
 	.icon p { width: 400px; }
 }
     
-@media (max-width: 480px){
+
+@media (max-width: 540px) {
+	
     .banner {
         visibility: hidden;
         margin-bottom: -80px;
@@ -308,12 +308,6 @@ footer {
     .banner-text {
         visibility: hidden;
     }
-    
-}
-
-@media (max-width: 540px) {
-	
-    
     
     .home-about {
 		width: 85%;
@@ -351,6 +345,7 @@ footer {
     min-width: 250px;
     width: 78%;
     }}
+
     
     
 
@@ -360,7 +355,6 @@ footer {
     
 }
 
-}
 
 @media (min-width: 680px) {
 	body { background-size: 150vw; }
