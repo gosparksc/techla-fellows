@@ -8,7 +8,7 @@ var defaultOptions = {
   },
   render: function (date) {
     this.el.innerHTML =
-                        this.leadingZeros(date.days) + " DAYS, " +
+                        this.leadingZeros(date.days) + " DAY, " +
                         this.leadingZeros(date.hours) + " HOURS, " +
                         this.leadingZeros(date.min) + " MINUTES. "
   }
@@ -121,7 +121,7 @@ var Countdown = function(el, options) {
    * @return {String}        String of the desired length with leading zeros
    */
   this.leadingZeros = function(num, length) {
-    length = length || 2;
+    length = length || 1;
     num = String(num);
     if (num.length > length) {
       return num;
