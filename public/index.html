@@ -6,8 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>TechLA Fellows</title>
         <link rel="stylesheet" type="text/css" href="new.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="../typed.js-master/js/typed.js"></script>
+        <script type="text/javascript" src="js/jquery.countdown.js"></script>
         <script>
           $(function(){
               $(".element").typed({
@@ -22,8 +24,20 @@
               });
           });
         </script>
+        <script>
+          $(function() {
+            $('#counter').countdown({
+              date: "February 24, 2017 12:03:26"
+            });
+          });
+        </script>
     </head>
-    <body>
+    <body onload="countdown(20);">
+      <div class="banner">
+        <div class="banner-text">
+            <h1><span id="counter-text">APPLICATION CLOSES IN </span><span id="counter"></span></h1>
+        </div>
+      </div>
       <nav>
         <a href="/"><img class="logo" src="img/techla-weblogo.png"></a>
         <div class="navlinks">
@@ -71,6 +85,7 @@
           <div class="footer-content">
             <div class="footer-logo">
               <a href="http://www.sparksc.org" target="_blank"><img src="img/presentedby.png"></a>
+                <a href="http://www.bruinentrepreneurs.org/" target="_blank"><img src="img/presentedby-bruin.png"></a>
             </div>
             <div class="media-links">
               <a href="https://twitter.com/gosparksc?lang=en" target="_blank"><img src="img/twitter.png"></a>
