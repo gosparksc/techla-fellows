@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="new.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery.countdown.js"></script>
-        <script src="../typed.js-master/js/typed.js"></script>
+        <script src="typed.js-master/js/typed.js"></script>
         <script>
           $(function(){
               $(".element").typed({
@@ -25,14 +25,18 @@
           });
         </script>
         <script>
-        
+          $(function() {
+            $('#counter').countdown({
+              date: "February 24, 2017 12:00:00"
+            });
+          });
         </script>
     </head>
-      <div class="banner">
-        <div class="banner-text">
-          <div id="counter"></div>
-        </div>
+    <div class="banner">
+      <div class="banner-text">
+          <h1><span id="counter-text">APPLICATION CLOSES </span><span id="counter"></span></h1>
       </div>
+    </div>
       <nav>
         <a href="/"><img class="logo" src="img/techla-weblogo.png"></a>
         <div class="navlinks">
