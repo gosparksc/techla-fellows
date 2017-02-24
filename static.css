@@ -179,27 +179,27 @@ footer {
 }
 
 .media-links {
-	float: right;
-	display: inline;
+	-webkit-display: flex;
+	display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
 }
 
 .media-links img {
-	margin-top: 45px;
-	width: 40px;
+	margin-top: 30px;
+    margin-bottom: auto;
+	width: 28px;
 	opacity: .7;
 	transition: 1s;
+    -moz-transition: 1s;
 }
 
 .media-links img:hover {
 	opacity: 1;
 }
 
-.media-links .small {
-	width: 32px;
-}
-
-.media-links .smaller {
-	width: 34px;
+.media-links .twitter{
+    width: 35px;
 }
 
 @media (min-width: 680px) {
@@ -253,9 +253,6 @@ footer {
 		display: none;
 	}
 
-	.footer-content {
-		text-align: center;
-	}
 
 	.partner p {
 		width: 80% !important;
@@ -272,6 +269,7 @@ footer {
 	}
     
     .footer-content {
+        text-align: center;
 		justify-content: center;
 
 	}
@@ -279,5 +277,5 @@ footer {
     .footer-logo {
     min-width: 250px;
     width: 78%;
-    }}
+    }
 }
