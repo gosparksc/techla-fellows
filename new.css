@@ -294,9 +294,21 @@ footer {
 	}
 	.icon p { width: 400px; }
 }
+    
+@media (max-width: 480px){
+    .banner {
+        visibility: hidden;
+        margin-bottom: -80px;
+    }
 
-@media (min-width: 540px) {
-	body { background-size: 220vw; }
+    .banner h1 {
+        visibility: hidden;
+    }
+
+    .banner-text {
+        visibility: hidden;
+    }
+    
 }
 
 @media (max-width: 540px) {
@@ -336,7 +348,16 @@ footer {
 	}
 
     .footer-logo {
+    min-width: 250px;
     width: 78%;
+    }}
+    
+    
+
+@media (min-width: 540px) {
+	body { background-size: 220vw; }
+    
+    
 }
 
 }
