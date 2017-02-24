@@ -153,17 +153,29 @@ footer {
 }
 
 .footer-content {
+    height: 110px;
 	width: 90%;
 	margin: auto;
+    -webkit-display: flex;
+	display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+
 }
 
 .footer-content img {
-	margin: 30px 30px 30px 0px;
-	width: 250px;
+	margin: 20px 30px 10px 0px;
+	width: 95%;
+    padding: 2%;
 }
 
 .footer-logo {
-	display: inline;
+    width: 40%;
+    min-width: 380px;
+    -webkit-display: flex;
+	display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
 }
 
 .media-links {
@@ -258,4 +270,14 @@ footer {
 	.partner-logo {
 		margin-bottom: -60px;
 	}
+    
+    .footer-content {
+		justify-content: center;
+
+	}
+
+    .footer-logo {
+    min-width: 250px;
+    width: 78%;
+    }}
 }
