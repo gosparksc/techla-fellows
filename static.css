@@ -151,9 +151,8 @@ nav {
 	display: block;
 }
 
-.faq-icon {
-    width: 40px; vertical-align: middle; padding:3%; margin:1%; margin-left: 2%;
-}
+    .faq img { margin-left:20px;width: 80px; vertical-align: middle; }
+
 	.faq p {
 		display: inline-block;
 		vertical-align: middle;
