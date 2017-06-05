@@ -34,6 +34,8 @@ h2 {
 	margin: 0px 10px 0px 30px;
 }
 
+
+
 .header {
 	background: #fff url('img/header.jpg') no-repeat;
 	background-position: 50% 40%;
@@ -141,6 +143,26 @@ nav {
 		box-shadow: 0 0 2px #bbb;
 	}
 
+.faq {
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 0 2px #ddd;
+	margin-bottom: 20px;
+	display: block;
+}
+
+    .faq img { margin-left:20px;width: 80px; vertical-align: middle; }
+
+	.faq p {
+		display: inline-block;
+		vertical-align: middle;
+		width: 75%;
+		padding: 20px;
+	}
+	.faq:hover {
+		border-bottom: 1px solid #bbb;
+		box-shadow: 0 0 2px #bbb;
+	}
 /* FOOTER */
 footer {
 	background-color: black;
