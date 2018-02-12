@@ -58,7 +58,7 @@ h2 {
 	}
 
 	.header h1 {
-		max-width: 400px;
+		max-width: 600px;
 		color: #fff;
 		text-shadow: 0px 0px 20px #666;
 		vertical-align: middle;
@@ -72,7 +72,7 @@ h2 {
 }
 
 nav {
-	padding: 15px 30px;
+	padding: 15px 0px;
 	background: #fff;
 }
 
@@ -94,6 +94,7 @@ nav {
 .logo {
 	width: 200px;
 	display: block;
+	padding-left: 20px;
 }
 
 .bold {
@@ -226,7 +227,7 @@ footer {
 
 @media (min-width: 680px) {
 	.header {
-		padding: 100px 0 60px 0;
+		padding: 100px 0px 60px 0;
 	}
 	.logo {
 		width: 250px;
@@ -234,7 +235,7 @@ footer {
 	}
 	nav {
 		position: fixed;
-		width: 96%;
+		width: 100%;
 		z-index: 101;
 		box-shadow: 0 0 2px #ddd;
 	}
@@ -289,7 +290,7 @@ footer {
 	.partner-logo {
 		margin-bottom: -60px;
 	}
-    
+
     .footer-content {
         text-align: center;
 		justify-content: center;
