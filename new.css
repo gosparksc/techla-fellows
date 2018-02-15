@@ -1,3 +1,14 @@
+/*NEW SHIT*/
+
+.hero {
+	background: url('img/techla-skyline.jpeg') no-repeat center top;
+	height: 100%;
+	width: 100%;
+	min-height: 40vh;
+	background-size: 100%;
+	background-size: cover;
+}
+
 @font-face {
 	font-family: 'Circular Bold';
 	src: url('CircularStd-Bold.otf');
@@ -42,31 +53,24 @@ span#counter-text {
 
 body {
 	margin: 0;
-	background: #484c50 url('img/header.jpg') no-repeat center top;
-	background-size: 350vw;
 	font-family: 'Circular Book';
 	color: #fff;
 }
 
-.home {
-	width: 90%;
-	max-width: 800px;
-	height: 72vh;
-	margin: 30px;
-}
-
 nav {
 	padding: 15px 30px;
+	background-color: white;
 }
 
 	.navlinks a {
 		display: inline-block;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		margin: 20px 20px 0 0;
+		margin: 15px 20px 0 0;
         opacity: 0.8;
         transition: 0.2s;
         -moz-transition: 0.2s;
+		color: #333333 !important;
 	}
 
 	.apply { color: #ffd2c2 !important; font-weight: bold; }
