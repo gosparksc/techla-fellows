@@ -11,7 +11,7 @@
 body {
 	margin: 0;
 	background: #f8f8f8;
-	font-family: 'Circular Book';
+	font-family: 'SF Regular';
 	color: #4f4f4f;
 	line-height: 1.5em;
 }
@@ -22,11 +22,11 @@ a, a:visited {
 }
 
 h1 {
-	font: bold 1.5em 'Circular Bold';
+	font: bold 1.5em 'SF Regular';
 }
 
 h2 {
-	font: bold 1.3em/0.6em 'Circular Bold';
+	font: bold 1.3em/0.6em 'SF Regular';
 }
 
 .article {
@@ -243,7 +243,7 @@ footer {
 		float: right;
 	}
 	h1 { font-size: 2em; }
-	h2 { font: bold 2.2em/1em 'Circular Bold'; }
+	h2 { font: bold 2.2em/1em 'SF Regular'; }
 	p { font-size: 1em; }
 
 	.partner p {

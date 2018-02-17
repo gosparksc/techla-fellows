@@ -22,10 +22,10 @@
           $(function(){
               $(".element").typed({
                 strings: ["tech", "design", "engineering", "business", "new"],
-                typeSpeed: 40,
+                typeSpeed: 20,
                 startDelay: 0,
-                backspeed: 10,
-                backDelay: 2000
+                backspeed: 20,
+                backDelay: 3000
                 // if we want this to loop once, uncomment the code below.
                 // loop: true,
                 // loopCount: 2
@@ -33,21 +33,12 @@
           });
         </script>
         <script>
-          // $(function() {
-          //   $('#counter').countdown({
-          //     date: "February 24, 2017 24:00:00"
-          //   });
-          // });
-        </script>
-    <script>
-        $(document).ready(function (){
-            $("#chevron").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#chevron").offset().top
-                }, 800);
+          $(function() {
+            $('#counter').countdown({
+              date: "February 24, 2018 24:00:00"
             });
-        });
-    </script>
+          });
+        </script>
     <script>
         $(document).ready(function (){
             $('a[href*="#contact"]:not([href="#"])').click(function (){
@@ -59,28 +50,46 @@
     </script>
     </head>
     <body>
-    <!-- <div class="banner">
-      <div class="banner-text">
-          <h1><span id="counter-text">TECHLA FELLOWS SUMMER 2018 </span>APPLICATIONS ARE OPEN!</h1>
-      </div>
-    </div> -->
       <nav class="standard-nav">
-        <a href="/"><img class="logo" src="img/techla-weblogo.png"></a>
+        <a href="/"><img class="logo" src="img/techla-weblogo2.png"></a>
         <div class="navlinks">
           <a href="about.html">About</a>
           <a href="partners.html">Partners</a>
           <a href="faq.html">FAQ</a>
-          <a href="https://bit.ly/techla18" target="_blank" class="apply">Apply</a>
+          <a class="nav-button" href="https://bit.ly/techla18" target="_blank" class="apply">Apply</a>
         </div>
       </nav>
 
         <div class="hero">
           <div class="hero-content">
-            <h1>Start your <div class="element"></div>career in Los Angeles.</h1>
+            <h1>Start your <div class="element"></div>career in LA.</h1>
+              <a id="button-left" target="_blank" href="https://bit.ly/techla18"><div class="hero-button">Apply now</div></a>
+              <a id="button-right" target="_blank" href="https://bit.ly/techla18"><div id="less" class="hero-button">Meet the Fellows</div></a>
           </div>
         </div>
-        <section id="about">
-        <div class="home-about">
+        <div class="banner">
+          <div class="banner-text">
+              <h1><span id="counter-text">SUMMER 2018 APPLICATION CLOSES IN </span><span id="counter"></span></h1>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="primary-column">
+          <div class="fellows-image">
+            <img id="group-photo" src="img/media17/techla-group-photo.png"></img>
+          </div>
+          <div class="fellows-elevator">
+            <div class="floater">
+              <h2>What is Tech.LA Fellows?</h2>
+              <p>Tech.LA Fellow’s 10-week Summer Fellowship gives
+  highly motivated students in design, engineering, and business
+  a paid internship with a Los Angeles startup.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="home-about">
           <img class="circle" src="img/circle.png" alt="">
           <div class="bubble">
             <h2 style="color:#9ee3f6">The coolest internships.</h2>
@@ -104,9 +113,23 @@
           </div>
           <img class="skyline" src="img/skyline.png" alt="">
         </div>
-        </section>
+        </section> -->
 
-        <div class="bar"><div class="bluep"></div><div class="orangep"></div><div class="grayp"></div></div>
+        <div class="bar"></div>
+          <div class="primary-column">
+            <div class="mission">
+              <div id="tighten">
+                <img id="icon" src="img/techla-icon.png"></img>
+                <h1 id="inline">The Tech.LA Mindset</h1>
+              </div>
+              <p>Over the course of a summer, KPCB Design and Engineering Fellows join our portfolio companies, where they develop their technical or design skills and are mentored by an executive within the company. Participants in our new Product Fellows program will get the chance to spend a full year working at a Silicon Valley startup.
+
+Fellows will also be invited to attend both private events held by Kleiner Perkins as well as by our portfolio companies, where they can meet other talented engineering and design students, network with luminaries in their respective fields, and explore the San Francisco Bay Area.
+
+We’re honored to be named one of the top 5 internship programs by Vault. See what people are saying about the program on Glassdoor.</p>
+            </div>
+        </div>
+
         <div class="home-partners">
           <h1>Our Partners</h1>
           <a href="/partners.html"><img class="logos not-hidden" src="img/companies.png" alt="companies"></a>

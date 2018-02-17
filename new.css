@@ -1,12 +1,138 @@
 /*NEW SHIT*/
+a, p, h1, h2, h3, h4, {
+	font-family: 'SF Regular';
+}
+
+p {
+	color: #666666 !important;
+	line-height: 35px;
+
+}
+
+h2 {
+	font-size: 25px !important;
+	font-weight: 300;
+}
 
 .hero {
-	background: url('img/techla-skyline.jpeg') no-repeat center top;
+	background: #476bdd url('img/techla-background-blue.jpg') no-repeat center top;
 	height: 100%;
 	width: 100%;
-	min-height: 40vh;
+	min-height: 50vh;
 	background-size: 100%;
 	background-size: cover;
+	padding-top: 150px;
+}
+
+.hero-content {
+	width: 90%;
+	margin: auto;
+	height: 50%;
+	text-align: center;
+}
+
+	.hero-content h1 {
+		font-size: 60px;
+		font-family: 'GT Pressura' !important;
+		letter-spacing: 1px;
+	}
+
+	.element {
+		opacity: 1 !important;
+	}
+
+	.hero-button {
+		font-size: 20px;
+		padding: 10px 20px 10px 20px;
+		border: #fff 2px solid;
+		width: auto;
+		margin: auto;
+		border-radius: 5px;
+		background-color: rgb(34, 73, 170);
+		background-color: rgba(34, 73, 170, .6);
+	}
+
+	#less {
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+
+	.navlinks .nav-button {
+		padding: 8px 15px 8px 15px;
+		border: #ba3a13 1.5px solid;
+		border-radius: 5px;
+		background-color: #e55725;
+		color: white !important;
+	}
+
+#button-left {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#button-right {
+	display: inline-block;
+}
+
+.primary-column {
+	width: 70%;
+	max-width: 1500px;
+	margin: auto;
+}
+	.primary-column h1, p {
+		color: #333333;
+	}
+
+.fellows-image {
+		width: 100%;
+		text-align: center;
+		margin-top: 40px;
+		margin-bottom: 40px;
+}
+
+	#group-photo {
+		max-width: 700px;
+		width: 80%;
+	}
+
+.fellows-elevator {
+	color: #333333;
+	font-size: 16px;
+	width: 500px;
+	text-align: center;
+	width: 100%;
+}
+
+.floater {
+	max-width: 700px;
+	width: 80%;
+	margin: auto;
+}
+
+#icon {
+	width: 60px;
+	margin: 0px 5px -16px -25px;
+	display: inline-block;
+}
+
+#inline {
+	display: inline-block;
+}
+
+#tighten {
+	margin: 60px 0px -20px 0px;
+}
+
+/*END NEW CONTENT*/
+
+@font-face {
+	font-family: 'SF Regular';
+	src: url('SF-UI-Text-Regular.otf');
+}
+
+@font-face {
+	font-family: 'GT Pressura';
+	src: url('GT-Pressura-Mono-Bold.otf');
 }
 
 @font-face {
@@ -23,8 +149,8 @@
 	width: 100%;
 	height: 60px;
 	background-color: #476bdd;
+	border-top: 3px solid #1a4187;
 	border-bottom: 3px solid #1a4187;
-    margin-bottom: 0px;
 }
 
 .banner h1 {
@@ -38,6 +164,8 @@
 
 span#counter {
 	opacity: 1;
+	letter-spacing: .5px;
+	word-spacing: -5px;
 }
 
 span#counter-text {
@@ -53,24 +181,30 @@ span#counter-text {
 
 body {
 	margin: 0;
-	font-family: 'Circular Book';
+	font-family: 'SF Regular';
 	color: #fff;
 }
 
 nav {
-	padding: 15px 30px;
+	padding: 20px 30px 15px 30px;
 	background-color: white;
 }
 
 	.navlinks a {
 		display: inline-block;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		margin: 15px 20px 0 0;
+		margin: 0px 20px 0 0;
         opacity: 0.8;
         transition: 0.2s;
         -moz-transition: 0.2s;
 		color: #333333 !important;
+		font-size: 16px;
+
+	}
+
+	.logo {
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+		margin-left: 5px;
 	}
 
 	.apply { color: #ffd2c2 !important; font-weight: bold; }
@@ -145,11 +279,11 @@ nav {
 	}
 
 .bar {
-	height: 15px;
+	height: 5px;
 	display: block;
 	position: relative;
-	margin: 20px 0 0 0;
-	background: #777;
+	margin: 80px 0 0 80px;
+	background: #eeeeee;
 }
 
 .hidden {
@@ -201,11 +335,11 @@ a, a:visited {
 }
 
 h1 {
-	font: bold 1.5em 'Circular Bold';
+	font: bold 1.5em 'SF Regular';
 }
 
 h2 {
-	font: bold 1.3em/0.6em 'Circular Bold';
+	font: bold 1.3em/0.6em 'SF Regular';
 }
 
 //ABOUT - FACES
@@ -441,7 +575,7 @@ footer {
 			margin: -5px 0 0 20px;
 		}
 	h1 { font-size: 2em; }
-	h2 { font: bold 2.2em/1em 'Circular Bold'; }
+	h2 { font: bold 2.2em/1em 'SF Regular'; }
 	p { font-size: 1.25em; }
 }
 
