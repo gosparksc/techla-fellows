@@ -37,42 +37,60 @@
     <style>
         /* code for animated blinking cursor */
         .typed-cursor{
-            opacity: .3;
+            opacity: 1;
             font-weight: 100;
-            -webkit-animation: blink 0.7s 10s;
-            -moz-animation: blink 0.7s 10s;
-            -ms-animation: blink 0.7s 10s;
-            -o-animation: blink 0.7s 10s;
-            animation: blink 0.7s 10s;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
         }
         @-keyframes blink{
-            0% { opacity:.5; }
+            0% { opacity:1; }
             50% { opacity:0; }
-            100% { opacity:.5; }
+            100% { opacity:1; }
         }
         @-webkit-keyframes blink{
-            0% { opacity:.5; }
+            0% { opacity:1; }
             50% { opacity:0; }
-            100% { opacity:.5; }
+            100% { opacity:1; }
         }
         @-moz-keyframes blink{
-            0% { opacity:.5; }
+            0% { opacity:1; }
             50% { opacity:0; }
-            100% { opacity:.5; }
+            100% { opacity:1; }
         }
         @-ms-keyframes blink{
-            0% { opacity:.5; }
+            0% { opacity:1; }
             50% { opacity:0; }
-            100% { opacity:.5; }
+            100% { opacity:1; }
         }
         @-o-keyframes blink{
-            0% { opacity:.5; }
+            0% { opacity:1; }
             50% { opacity:0; }
-            100% { opacity:.5; }
+            100% { opacity:1; }
         }
     </style>
 </head>
 <body>
+
+    <div class="wrap">
+        <h1 class="h1">Typed.js</h1>
+
+        <div class="type-wrap">
+            <div id="typed-strings">
+                <p>Typed.js is a <strong>jQuery</strong> plugin.</p>
+                <p>It <em>types</em> out sentences.</p>
+                <p>And then deletes them.</p>
+                <p>Try it out!</p>
+            </div>
+            <span id="typed" style="white-space:pre;"></span>
+        </div>
+
+        <div class="links">
+            <a href="http://www.mattboldt.com/demos/typed-js">View original demo</a> | <a href="http://www.mattboldt.com">View mattboldt.com</a> | <a href="http://www.twitter.com/atmattb">Complain to Matt about how awful this is</a>
+        </div>
+    </div>
 
 </body>
 </html>

@@ -8,8 +8,8 @@ var defaultOptions = {
   },
   render: function (date) {
     this.el.innerHTML =
-                        this.leadingZeros(date.days) + " DAYS <span id='counter-text'>&</span> " +
-                        this.leadingZeros(date.hours) + " HOURS. "
+                        this.leadingZeros(date.hours) + " HOURS AND " +
+                        this.leadingZeros(date.min) + " MINUTES. "
   }
 };
 
