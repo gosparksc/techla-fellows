@@ -21,11 +21,11 @@
         <script>
           $(function(){
               $(".element").typed({
-                strings: ["Push code from Griff^100ith Observatory.", "Create pitch decks in Santa Monica.", "Sketch designs at the Broad.", "Find yourself in Los Angeles."],
-                typeSpeed: 8,
-                startDelay: 1000,
-                backspeed: 10,
-                backDelay: 2000
+                strings: ["tech", "design", "engineering", "business", "new"],
+                typeSpeed: 20,
+                startDelay: 0,
+                backspeed: 20,
+                backDelay: 3000
                 // if we want this to loop once, uncomment the code below.
                 // loop: true,
                 // loopCount: 2
@@ -33,21 +33,12 @@
           });
         </script>
         <script>
-          // $(function() {
-          //   $('#counter').countdown({
-          //     date: "February 24, 2017 24:00:00"
-          //   });
-          // });
-        </script>
-    <script>
-        $(document).ready(function (){
-            $("#chevron").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#chevron").offset().top
-                }, 800);
+          $(function() {
+            $('#counter').countdown({
+              date: "February 24, 2018 24:00:00"
             });
-        });
-    </script>
+          });
+        </script>
     <script>
         $(document).ready(function (){
             $('a[href*="#contact"]:not([href="#"])').click(function (){
@@ -59,30 +50,48 @@
     </script>
     </head>
     <body>
-    <div class="banner">
-      <div class="banner-text">
-          <h1><span id="counter-text">TECHLA FELLOWS SUMMER 2018 </span>APPLICATIONS ARE OPEN!</h1>
-      </div>
-    </div>
-      <nav>
-        <a href="/"><img class="logo" src="img/techla-weblogo.png"></a>
+      <nav class="standard-nav">
+        <a href="/"><img class="logo" src="img/techla-weblogo2.png"></a>
         <div class="navlinks">
-          <a href="about.html">About</a>
-          <a href="partners.html">Partners</a>
-          <a href="faq.html">FAQ</a>
-          <a href="https://bit.ly/techla18" target="_blank" class="apply">Apply</a>
+          <a class="norm"href="about.html">About</a>
+          <a class="norm"href="partners.html">Partners</a>
+          <a class="norm"href="faq.html">FAQ</a>
+          <a class="hide">|</a>
+          <a class="norm hide" href="https://medium.com/@TechLAFellows" target="_blank">Student Section »</a>
+          <a class="nav-button hide" href="https://bit.ly/techla18" target="_blank" class="apply">Apply</a>
+          <a class="norm show" href="https://bit.ly/techla18" target="_blank" class="apply">Apply</a>
         </div>
-      </nav>
+       </nav>
 
-        <section class="splash">
-        <div class="home">
-            <h1 class="special-h1"><div class="element"></div></h1>
-            <p class="intro">TechLA Fellows is looking for exceptionally talented undergraduate students in computer science, design, and business to work as interns at budding startups in LA.</p>
+        <div class="hero">
+          <div class="hero-content">
+            <h1 class="hide">Start your <div class="element"></div>career in LA.</h1>
+            <h1 class="show">Start your new career in LA.</h1>
+              <a id="button-left" target="_blank" href="https://bit.ly/techla18"><div class="hero-button">Apply now</div></a>
+              <a id="button-right" target="_blank" href="https://medium.com/@TechLAFellows"><div id="less" class="hero-button">Meet the Fellows »</div></a>
+          </div>
         </div>
-            <div class="chevron"><i class="fa fa-chevron-down" id="chevron"></i></div>
-        </section>
-        <section id="about">
-        <div class="home-about">
+        <div class="banner">
+          <div class="banner-text">
+              <h1><span id="counter-text">SUMMER 2018 APPLICATION CLOSES IN </span><span id="counter"></span></h1>
+          </div>
+        </div>
+        <br>
+        <div class="primary-column">
+          <div class="fellows-image">
+            <img id="group-photo" src="img/media17/techla-group-photo.png"></img>
+          </div>
+          <div class="fellows-elevator">
+            <div class="floater">
+              <h2>What is Tech.LA Fellows?</h2>
+              <p>Tech.LA Fellow’s 10-week Summer Fellowship gives
+  highly motivated students in design, engineering, and business
+  a paid internship with a Los Angeles startup.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="home-about">
           <img class="circle" src="img/circle.png" alt="">
           <div class="bubble">
             <h2 style="color:#9ee3f6">The coolest internships.</h2>
@@ -106,31 +115,89 @@
           </div>
           <img class="skyline" src="img/skyline.png" alt="">
         </div>
-        </section>
+        </section> -->
 
-        <div class="bar"><div class="bluep"></div><div class="orangep"></div><div class="grayp"></div></div>
-        <div class="home-partners">
-          <h1>Our Partners</h1>
-          <a href="/partners.html"><img class="logos not-hidden" src="img/companies.png" alt="companies"></a>
-          <a class="hidden" href="/partners.html"><img class="logos" src="img/companies-narrow.png" alt="companies-narrow"></a>
+        <div class="bar"></div>
+          <div class="primary-column">
+            <div class="mission">
+              <div id="tighten">
+                <img id="icon" src="img/techla-icon.png"></img>
+                <h2 id="">The Tech.LA Mindset</h2>
+              </div>
+              <p>During the summer, Tech.LA Fellows will intern with our Company Partners to build incredible products in sunny Los Angeles. We believe that with all of its unique offerings—entertainment capital of the world, a cultural boon, natural beauty, bustling downtown, and of course a tech community on the rise—Los Angeles deserves a technology ecosystem as robust as what you can find up north. </p>
+            </div>
+
+            <div class="row spacer">
+              <div class="column">
+                <img id="fireside-pic" src="img/media17/techla-tall.png"></img>
+              </div>
+              <div class="column scrunch">
+                <h2 class="blue-title">1. Build</h2>
+                <p><em>a family of talented, driven individuals who are proud of their work.</em></p>
+
+                <h2 class="blue-title">2. Expose</h2>
+                <p><em>students to the unique qualities of Los Angeles' startup ecosystem.</em></p>
+
+                <h2 class="blue-title">3. Impact</h2>
+                <p><em>the local entrepreneurial community and set a new standard for tech in Los Angeles.</em></p>
+              </div>
+            </div>
+
         </div>
 
-        <div id="contact">
-        <h1>Questions?</h1>
-        <p>E-mail us at <strong>fellows@tech.la</strong></p>
+        <div class="background-image">
+          <h1 class="pressura">Partnering Companies</h1>
         </div>
+
+        <div class="primary-column">
+          <div class="home-partners">
+            <p>Our partner companies span everything from building electric trucks to creating next-generation mobile apps. As a Tech.LA Fellow, you'll spend the summer interning, learning, and growing with one of them.</p>
+            <a href="/partners.html"><img class="logos not-hidden" src="img/companies.png" alt="companies"></a>
+            <a class="hidden" href="/partners.html"><img class="logos" src="img/companies-narrow.png" alt="companies-narrow"></a>
+
+            <a href="/partners.html"><img class="logos sponsors not-hidden" src="img/media17/sponsor-logos-fellows.png"></a>
+            <a class="hidden" href="/partners.html"><img class="logos" src="img/media17/sponsor-logos-fellows-tall.png" alt="companies-narrow"></a>
+          </div>
+
+
+          <p>In addition to a paid internship at one of Tech.LA's partner companies, Fellows will have the opportunity to talk with Los Angeles tech leaders, interact with industry leaders across the city, and get plugged into the local entrepreneurial ecosystem. In the past, Fellows have sat down with individuals like Jeff Morris Jr., Director of Product and Revenue at Tinder and Venture Capitalist Laurent Grill from Luma Launch.</p>
+          <div class="bar"></div>
+          <div class="row">
+            <div class="column" id="vertical-center" style="">
+              <h2><span class="highlight">Fireside Chat</span></h2>
+              <p>The Fellows listened to Jeff and his
+experience working at Tinder. He
+generously offered his time and
+stayed after his presentation to talk
+about tech in Los Angeles.</p>
+            </div>
+            <div class="column center" style="">
+              <img id="fireside-pic" src="img/media17/techla-tinder.png"></img>
+            </div>
+          </div>
+        <div class="bar"></div><br><br>
+
+        <p>Want to learn more about our previous Fellows? <a class="sick" href="/about.html">Click here.</a> Interested in reading more about Tech in Los Angeles? <a class="sick" href="/about.html">We've got you covered.</a> Already applied and looking for our FAQ? Get your questions answered <a class="sick" href="/about.html">here.</a>
+        </div>
+        <br><br>
 
       <footer>
         <div class="footer-container">
-          <div class="footer-content">
-            <div class="footer-logo">
-              <a href="http://www.sparksc.org" target="_blank"><img src="img/presentedby.png"></a>
-                <a href="http://www.bruinentrepreneurs.org/" target="_blank"><img src="img/presentedby-bruin.png"></a>
-            </div>
-            <div class="media-links">
-              <a href="https://twitter.com/gosparksc?lang=en" target="_blank"><img class="twitter" src="img/twitter.png"></a>
-              <a href="https://www.facebook.com/techlafellowship/" target="_blank"><img src="img/fb.png"></a>
-              <a href="https://www.linkedin.com/company/3758371?trk=prof-exp-company-name" target="_blank"><img src="img/linkedin.png"></a>
+          <div class="primary-column">
+            <div class="footer-content">
+              <div class="footer-links">
+                <ul class="title">Website Links</ul>
+                  <ul class="soft"><a href="about.html">About</a></ul>
+                  <ul class="soft"><a href="partners.html">Partners</a></ul>
+                  <ul class="soft"><a href="faq.html">FAQ</a></ul>
+                  <ul class="soft"><a target="_blank" href="https://medium.com/@TechLAFellows">Student Section</a></ul>
+                  <ul class="soft"><a target="_blank" href="https://bit.ly/techla18">Apply</a></ul>
+              </div>
+              <div class="media-links">
+                <a href="https://twitter.com/gosparksc?lang=en" target="_blank"><img class="twitter" src="img/twitter.png"></a>
+                <a href="https://www.facebook.com/techlafellowship/" target="_blank"><img src="img/fb.png"></a>
+                <a href="https://www.linkedin.com/company/3758371?trk=prof-exp-company-name" target="_blank"><img src="img/linkedin.png"></a>
+              </div>
             </div>
           </div>
         </div>
