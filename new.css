@@ -62,6 +62,10 @@ h2 {
 		background-color: rgba(34, 73, 170, .6);
 	}
 
+	.not-allowed {
+		cursor: not-allowed;
+	}
+
 	#less {
 		background-color: rgba(0, 0, 0, 0);
 	}
@@ -77,6 +81,7 @@ h2 {
 		border-radius: 5px;
 		background-color: #e55725;
 		color: white !important;
+		cursor: not-allowed;
 	}
 
 	.nav-button:hover {
@@ -314,7 +319,10 @@ nav {
 		display: block;
 	}
 
-	.apply { color: #ffd2c2 !important; font-weight: bold; }
+	.apply { 
+		color: #ffd2c2 !important; 
+		font-weight: bold; 
+	}
 
   .norm:hover {
         opacity: 1;
