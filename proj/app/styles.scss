@@ -500,9 +500,19 @@ a, a:visited {
 	color: #fff;
 }
 
+	.faq a {
+		color: $color_red !important;
+	}
+
 h1 {
 	font: bold 1.5em -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+	.faq h1 {
+		font-size: 20px;
+		color: #333 !important;
+		margin-bottom: -30px;
+	}
 
 h2 {
 	font: bold 1.3em/0.6em -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -569,10 +579,21 @@ footer {
     justify-content: space-between;
 }
 
+.letter {
+	font-weight: 800 !important;
+	opacity: .5;
+	padding: 5px;
+}
+
 .article {
 	background-color: rgb(249, 249, 249);
 	padding: 40px 40px 40px 50px;
+	border-radius: 5px;
 }
+
+	.article:hover {
+		background-color: rgba(238, 238, 238, 0.52);
+	}
 
 	.article img {
 		height: 30px;
@@ -589,6 +610,53 @@ footer {
 		max-width: 600px;
 	}
 
+.partner-company {
+	padding: 40px 40px 40px 50px;
+	border: 2px solid grey;
+	border-bottom: 4px solid grey;
+	border-radius: 5px;
+	width: fit-content;
+}
+
+.partner-company:hover {
+	background-color: rgba(238, 238, 238, 0.543);
+}
+
+	.partner-company .img {
+		width: 150px;
+		height: 50px;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+		.partner-company .img-zoom {
+			background-size: auto 100%;
+			margin-left: -20px;
+		}
+
+		.partner-company .img-square {
+			width: 70px;
+			height: 70px;
+		}
+
+		.partner-company .img-long {
+			width: 200px;
+		}
+
+	.partner-company .text {
+		margin-top: 20px;
+	}
+
+	.partner-company h1 {
+		color: #333 !important;
+	}
+
+	.partner-company p {
+		padding: 0;
+		margin: 0;
+		max-width: 600px;
+	}
 .media-links img {
 	margin-top: 30px;
     margin-bottom: auto;
@@ -618,6 +686,63 @@ footer {
 .title {
 	font-size: 20px;
 }
+
+// FLEX GRID
+.logos-flex-container {
+	padding: 0;
+	margin-top: 80px;
+	list-style: none;
+	
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+  }
+  
+  .logos-flex-item {
+	width: 200px;
+	height: 50px;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	text-align: center;
+	cursor: pointer !important;
+	transition: .3s ease all;
+  }
+
+  	.logos-flex-item:hover {
+		  opacity: .6;
+	  }
+
+  	.logos-flex-item img {
+		  width: auto;
+		  height: 100%;
+	}
+
+		.flex-long {
+			width: 100% !important;
+			height: auto !important;
+		}
+
+		.flex-square {
+			width: 70px !important;
+			height: 70px !important;
+		}
+		
+		.flex-small {
+			height: 30px !important;
+		}
+  
+@media screen and (max-width: 970px) {
+	.logos-flex-item {
+		text-align: center;
+  	}
+}
+
+// END FLEX
 
 @media (min-width: 480px) {
 	body { background-size: 260vw; }

@@ -2,8 +2,48 @@ mixin card(obj)
     a.partner(href=obj.link, target='_blank')
         .article
             img(src=obj.img, alt='')
-            h1= obj.title
+            if obj.title
+                h1= obj.title
             p= obj.sub
         
         br
         br
+
+mixin partner(obj, preference)
+    a.partner(href=obj.link, target='_blank')
+        .partner-company
+            if (preference == 'zoom')
+                .img.img-zoom(style='background-image: url(' + obj.img + ')')
+            else if (preference == 'square')
+                .img.img-square(style='background-image: url(' + obj.img + ')')
+            else if (preference == 'long')
+                .img.img-long(style='background-image: url(' + obj.img + ')')
+            else
+                .img(style='background-image: url(' + obj.img + ')')
+            .text
+                if obj.title
+                    h1= obj.title
+                p= obj.sub
+        
+        br
+        br
+
+mixin question(question)
+    .faq
+        h1 #{question.q}
+        br
+        p!= question.a
+        br
+
+mixin flexImg(obj, preference)
+    <li class="logos-flex-item">
+        a(href=obj.link)
+            if (preference == 'square')
+                img(class='flex-square' src=obj.img)
+            else if (preference == 'long')
+                img(class='flex-long' src=obj.img)
+            else if (preference == 'small')
+                img(class='flex-small' src=obj.img)
+            else
+                img(src=obj.img)
+    </li>
