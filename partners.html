@@ -1,96 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TechLA Fellows</title>
-        <link rel="stylesheet" type="text/css" href="static.css">
-        <link rel="stylesheet" type="text/css" href="new.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    </head>
-    <body>
-      <nav class="standard-nav">
-        <a href="/"><img class="logo" src="img/fellows-logo-wondervc.png"></a>
-        <div class="navlinks">
-          <a class="norm"href="about.html">About</a>
-          <a class="norm"href="partners.html">Partners</a>
-          <a class="norm"href="faq.html">FAQ</a>
-          <a class="hide">|</a>
-          <a class="norm hide" href="https://medium.com/@TechLAFellows" target="_blank">Student Section »</a>
-          <a class="nav-button hide" target='_blank' href="https://sparksc.typeform.com/to/lp1ar1" class="apply">Apply</a>
-          <a class="norm show" target='_blank' href="https://sparksc.typeform.com/to/lp1ar1" class="apply">Apply</a>
-        </div>
-       </nav>
-        <div class="header orange">
-          <div class="primary-column">
-            <h1>The best, budding startups<br> in Los Angeles.</h1>
-          </div>
-        </div>
-        <br><br>
-        <div class="primary-column">
-          <h2>Our Previous Partners</h2><br>
-          <a href="https://www.mirareality.com/" target="_blank" class="partner">
-            <img class="partner-logo" src="img/logos/techla-partner-logo-1.png" alt="Mira">
-            <p>Mira is a mobile augmented reality company that aims to enhance the way people interact with technology and with each other.</p>
-          </a>
-          <a href="https://omaze.com/" target="_blank" class="partner">
-            <img class="partner-logo" src="img/logos/techla-partner-logo-2.png" alt="Omaze">
-            <p>Omaze is building a community that leverages the power of story and technology to transform lives. They use technology and once-in-a-lifetime experiences so that organizations can spend less time fundraising and more time making an impact.</p>
-          </a>
-          <a href="https://beplayfull.com/" target="_blank" class="partner">
-            <img class="partner-logo" src="img/logos/techla-partner-logo-3.png" alt="">
-            <p>PlayFull is an app where you can play games and win food. We help food businesses (including Chick-fil-a, Chipotle, Coffee Bean and more) engage and retain their customers and we help customers get their favorite foods while playing their favorite games.</p>
-          </a>
-          <a href="https://www.idealab.com/" target="_blank" class="partner">
-            <img class="partner-logo" src="img/logos/techla-partner-logo-4.png" alt="Idealab">
-            <p>Idealab is the longest running technology incubator and has created over 150 companies with more than 45 IPOs and acquisitions. Idealab looks for big problems in the world that have technology solutions and tests many ideas in parallel. When one shows great promise, Idealab recruits a great team, spins it off into a company, and helps them grow a successful business.</p>
-          </a>
-          <a href="https://jumpstart.me/" target="_blank" class="partner">
-            <img class="partner-logo" src="img/logos/techla-partner-logo-5.png" alt="Jumpstart">
-            <p>Jumpstart is a networking platform that connects individuals with recruiters from specific companies tailored to your interests and helps you prepare for those interviews so you can land a job tat you'll thrive in at a company you love.</p>
-          </a>
-          <a href="http://vtprodesign.com" target="_blank" class="partner">
-            <img class="partner-logo" src="img/logos/techla-partner-logo-6.png" alt="VT Pro Design">
-            <p>VT Pro Design is a full service creative design firm with a focus on the latest technology and techniques. VTD provides tailored services in creative design, advanced video, fabrication, engineering, projection mapping, interactive technology, custom media servers, content design, lighting, and audio.</p>
-          </a>
-          <a href="https://www.thortrucks.com/" target="_blank" class="partner">
-            <img class="partner-logo" src="img/logos/techla-partner-logo-7.png" alt="Thor Trucks">
-            <p>Thor Trucks is a technology company focused on innovations in commercial transportation. They believe the future is battery-electric and are developing a fleet of eletric vehicles to prove it.</p>
-          </a>
-          <a href="https://flux-ventures.com/" target="_blank" class="partner">
-            <img class="partner-logo" src="img/logos/techla-partner-logo-8.png" alt="Flux">
-            <p>Flux Ventures is a series of companies set out to disrupt their respective industries through unfair advantages in technology, distribution or marketing.</p>
-          </a>
-          <a href="http://www.tigertext.com/" target="_blank" class="partner">
-            <img class="partner-logo" src="img/logos/techla-partner-logo-9.png" alt="Thor Trucks">
-            <p>TigerConnect is healthcare’s most advanced, connected clinical communication platform. It’s expertly designed to help reduce the length of stay, save money, and improve patient outcomes.</p>
-          </a><br><br><br>
-
-          <p>Want to learn more about our previous Fellows? <a class="sick" target="_blank" href="https://medium.com/@TechLAFellows">Click here.</a> Interested in reading more about Tech in Los Angeles? <a class="sick" href="/about.html">We've got you covered.</a> Already applied and looking for our FAQ? Get your questions answered <a class="sick" href="/faq.html">here.</a>
-          </div>
-          <br><br>
+<head><link rel="stylesheet" href="/app.css">
+<script src="/vendor.js"></script>
+<script src="/app.js"></script>
+<script>require('initialize');</script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Tech.LA Fellows">
+  <meta property="og:url" content="https://tech.la">
+  <meta property="og:description" content="Tech.LA Fellows is looking for exceptionally talented undergraduate students in computer science, design, and business to work as interns at budding startups in LA.">
+  <meta property="og:image" content="https://tech.la/img/techla-stacked.png">
+  <title>Tech.LA Fellows</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<!-- ARTICLES-->
+<!-- COMPANIES-->
+<!-- FAQ-->
+<body></body>
+<!-- loads navigation bar for each page-->
+<nav class="standard-nav">
+  <div class="nav-content"><a href="/"><img class="logo" src="img/fellows-logo-wondervc.png"></a>
+    <div class="navlinks"><a class="norm" href="about.html">About</a><a class="norm" href="partners.html">Partners</a><a class="norm" href="faq.html">FAQ</a><a class="hide">|</a><a class="norm hide" href="https://medium.com/@TechLAFellows" target="_blank">Student Section »</a><a class="nav-button hide flush" href="https://sparksc.typeform.com/to/lp1ar1" target="_blank">Apply</a><a class="norm show" href="https://sparksc.typeform.com/to/lp1ar1" target="_blank">Apply</a></div>
+  </div>
+</nav>
+<!-- this is where content will be loaded for subsequent pages-->
+<div class="header orange">
+  <div class="primary-column">
+    <h1>The best, budding startups<br> in Los Angeles.</h1>
+  </div>
+</div><br><br>
+<div class="primary-column">
+  <h2>Our Partners</h2><br><a class="partner" href="http://gethoney.com" target="_blank">
+    <div class="partner-company">
+      <div class="img img-zoom" style="background-image: url(img/logos/honey.png)"></div>
+      <div class="text">
+        <p>Designed to help consumers save time and money, Honey’s 10 million users worldwide, shop over 30,000 retailers knowing that Honey is finding the best deals and coupons for their everyday needs.</p>
       </div>
-        <footer>
-          <div class="footer-container">
-            <div class="primary-column">
-              <div class="footer-content">
-                <div class="footer-links">
-                  <ul class="title">Website Links</ul>
-                    <ul class="soft"><a href="about.html">About</a></ul>
-                    <ul class="soft"><a href="partners.html">Partners</a></ul>
-                    <ul class="soft"><a href="faq.html">FAQ</a></ul>
-                    <ul class="soft"><a target="_blank" href="https://medium.com/@TechLAFellows">Student Section</a></ul>
-                    <ul class="soft"><a target="_blank" href="https://bit.ly/techla18">Apply</a></ul>
-                </div>
-                <div class="media-links">
-                  <a href="https://twitter.com/gosparksc?lang=en" target="_blank"><img class="twitter" src="img/twitter.png"></a>
-                  <a href="https://www.facebook.com/techlafellowship/" target="_blank"><img src="img/fb.png"></a>
-                  <a href="https://www.linkedin.com/company/3758371?trk=prof-exp-company-name" target="_blank"><img src="img/linkedin.png"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-    </body>
-</html>
+    </div><br><br></a><a class="partner" href="http://tala.co" target="_blank">
+    <div class="partner-company">
+      <div class="img" style="background-image: url(img/logos/tala.png)"></div>
+      <div class="text">
+        <p>Tala is mobile technology and data science company that is revolutionizing financial services in emerging markets.</p>
+      </div>
+    </div><br><br></a><a class="partner" href="http://fabfitfun.com" target="_blank">
+    <div class="partner-company">
+      <div class="img" style="background-image: url(img/logos/fabfitfun.png)"></div>
+      <div class="text">
+        <p>FabFitFun inspires happiness through discovery. We're the #1 full-size subscription box, helping our members discover brands and products for a life well-lived.</p>
+      </div>
+    </div><br><br></a><a class="partner" href="http://joymode.com" target="_blank">
+    <div class="partner-company">
+      <div class="img" style="background-image: url(img/logos/joymode.png)"></div>
+      <div class="text">
+        <p>Joymode lends you everything you need to have the experiences you want — from everyday activities to unforgettable moments.</p>
+      </div>
+    </div><br><br></a><a class="partner" href="http://saltedtv.com" target="_blank">
+    <div class="partner-company">
+      <div class="img" style="background-image: url(img/logos/salted.png)"></div>
+      <div class="text">
+        <p>Salted is a platform for tomorrow's food brands, consisting of a growing network of virtual restaurants &amp; an online cooking school.</p>
+      </div>
+    </div><br><br></a><a class="partner" href="http://goat.com" target="_blank">
+    <div class="partner-company">
+      <div class="img" style="background-image: url(img/logos/goat.png)"></div>
+      <div class="text">
+        <p>GOAT is a marketplace for buying and selling sneakers and streetwear.</p>
+      </div>
+    </div><br><br></a><a class="partner" href="http://rayatheapp.com" target="_blank">
+    <div class="partner-company">
+      <div class="img img-square" style="background-image: url(img/logos/raya.png)"></div>
+      <div class="text">
+        <p>Raya is an online membership-based community for dating, networking, and making new friends.</p>
+      </div>
+    </div><br><br></a><a class="partner" href="http://algolift.com" target="_blank">
+    <div class="partner-company">
+      <div class="img" style="background-image: url(img/logos/algolift.png)"></div>
+      <div class="text">
+        <p>AlgoLIFT is making it easier than ever for companies to utilize top of the line data science to optimize their business.</p>
+      </div>
+    </div><br><br></a><a class="partner" href="http://drayalliance.com" target="_blank">
+    <div class="partner-company">
+      <div class="img img-long" style="background-image: url(img/logos/drayalliance.png)"></div>
+      <div class="text">
+        <p>Dray Alliance is a b2b platform in the shipping &amp; logistics space that offers the &quot;ride-sharing&quot; model to deliver containers from containers from port to distribution centers.</p>
+      </div>
+    </div><br><br></a><a class="partner" href="http://lumi.com" target="_blank">
+    <div class="partner-company">
+      <div class="img" style="background-image: url(img/logos/lumi.png)"></div>
+      <div class="text">
+        <p>Lumi.com provides packaging and shipping supplies to online brands, from small businesses to leading companies shipping millions of orders per month.</p>
+      </div>
+    </div><br><br></a><a class="partner" href="http://dogtownmedia.com" target="_blank">
+    <div class="partner-company">
+      <div class="img img-long" style="background-image: url(img/logos/dogtownmedia.svg)"></div>
+      <div class="text">
+        <p>Dogtown Media is a mobile app development company develops mobile apps to solve everyday problems and simplify frustrating activities.</p>
+      </div>
+    </div><br><br></a><a class="partner" href="https://www.trustory.io/" target="_blank">
+    <div class="partner-company">
+      <div class="img img-square" style="background-image: url(img/logos/trustory.jpg)"></div>
+      <div class="text">
+        <p>Trustory is an incentived social network that lets users collectively identify what is true and what is not.</p>
+      </div>
+    </div><br><br></a><br><br><br><br><br>
+  <p>Want to learn more about our previous Fellows? <a class="sick" href="/about.html">Click here.</a> Interested in reading more about Tech in Los Angeles? <a class="sick" href="/about.html">We've got you covered.</a> Already applied and looking for our FAQ? Get your questions answered <a class="sick" href="/about.html">here.</a></p><br><br>
+</div>
+<!-- footer-->
+<div class="footer-container">
+  <div class="primary-column">
+    <div class="footer-content">
+      <div class="footer-links">
+        <ul class="title">Website Links</ul>
+        <ul class="soft"><a href="about.html">About</a></ul>
+        <ul class="soft"><a href="partners.html">Partners</a></ul>
+        <ul class="soft"><a href="faq.html">FAQ</a></ul>
+        <ul class="soft"><a target="_blank" href="https://medium.com/@TechLAFellows">Student Section</a></ul>
+        <ul class="soft"><a target="_blank" href="https://sparksc.typeform.com/to/lp1ar1">Apply</a></ul>
+      </div>
+      <div class="media-links"><a href="https://twitter.com/gosparksc?lang=en" target="_blank"><img class="twitter" src="img/twitter.png"></a><a href="https://www.facebook.com/techlafellowship/" target="_blank"><img src="img/fb.png"></a><a href="https://www.linkedin.com/company/3758371?trk=prof-exp-company-name" target="_blank"><img src="img/linkedin.png"></a></div>
+    </div>
+  </div>
+</div>
