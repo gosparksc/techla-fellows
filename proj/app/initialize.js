@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Populates counter
         document.getElementById("days").innerHTML = `${parseInt(days, 10)} DAYS.`;
-        document.getElementById("hours").innerHTML = `${parseInt(hours, 10)} HOURS.`;
       } else {
         return;
       }
