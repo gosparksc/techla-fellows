@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
           typeSpeed: 20,
           startDelay: 500,
           smartBackspace: true,
-          backspeed: 1000,
           backDelay: 5000
       }
       var typed = new Typed(".element", options);

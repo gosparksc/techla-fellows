@@ -1,3 +1,19 @@
+mixin par(text)
+    p!= text
+
+mixin spotlight(person)
+    <div class="bar"></div>
+    <div class="row">
+      <div class="column" id="vertical-center">
+        <h2><span class="highlight">#{person.head}</span></h2>
+        p!= person.sub
+      </div>
+      <div class="column center" style="">
+        img(id="fireside-pic" src=person.img)
+      </div>
+    </div>
+    .bar
+
 mixin card(obj)
     a.partner(href=obj.link, target='_blank')
         .article
@@ -47,3 +63,8 @@ mixin flexImg(obj, preference)
             else
                 img(src=obj.img)
     </li>
+
+mixin value(head, subhead)
+    .value
+        h2.blue-title= head
+        p=subhead

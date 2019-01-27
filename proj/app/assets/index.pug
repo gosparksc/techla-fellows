@@ -23,7 +23,7 @@ block content
     <div class="fellows-elevator">
       <div class="floater">
         <h2>What is Tech.LA Fellows?</h2>
-        <p>Tech.LA Fellow’s 10-week Summer Fellowship gives highly motivated students in design, engineering, and business a paid internship with a Los Angeles startup. Tech.LA Fellows is brought to you by <a class='sick' target='_blank' href='https://www.wondervc.com'>Wonder Ventures.</a></p>
+        +par(paragraphs.whatisfellows)
       </div>
     </div>
   </div>
@@ -35,38 +35,26 @@ block content
           <img id="icon" src="img/techla-icon.png"></img>
           <h2 id="">The Tech.LA Mindset</h2>
         </div>
-        <p>During the summer, Tech.LA Fellows intern with partner companies to build and improve products in engineering, design, or business positions. We believe that with all of its unique offerings—entertainment capital of the world, a cultural boon, bustling downtown, and a tech community on the rise—Los Angeles deserves a technology ecosystem as robust as what you can find up north. </p>
+        +par(paragraphs.mindset)
       </div>
 
-      <div class="row spacer">
-        <div class="column">
+      .row.spacer
+        .column
           <img id="fireside-pic" src="img/media17/techla-tall.png"></img>
-        </div>
-        <div class="column scrunch">
-          .value
-            <h2 class="blue-title">Build</h2>
-            <p>a family of talented, driven individuals who are proud of their work.</p>
-          .value
-            <h2 class="blue-title">Expose</h2>
-            <p>students to the unique qualities of Los Angeles' startup ecosystem.</p>
-          .value
-            <h2 class="blue-title">Impact</h2>
-            <p>the local entrepreneurial community and set a new standard for tech in Los Angeles.</p>
-        </div>
-      </div>
-
+        .column.scrunch
+          +value('Build', 'a family of talented, driven individuals who are proud of their work.')
+          +value('Expose', "students to the unique qualities of Los Angeles' startup ecosystem.")
+          +value('Impact', 'the local entrepreneurial community and set a new standard for tech in Los Angeles.')
   </div>
 
   <div class="background-image">
     <h1 class="centerblock">Partnering Companies</h1>
   </div>
 
-  <div class="primary-column">
-    <div class="home-partners">
-      <p>Our partner companies span everything from building electric trucks to creating next-generation mobile apps. As a Tech.LA Fellow, you'll spend the summer interning, learning, and growing with one of them.</p>
-      //- <a href="/partners.html"><img class="logos not-hidden" src="img/techla-fellows-companies-previous.png" alt="companies"></a>
-      //- <a class="hidden" href="/partners.html"><img class="logos" src="img/techla-fellows-companies-previous-mobile.png" alt="companies-narrow"></a>
-      <ul class="logos-flex-container">
+  .primary-column
+    .home-partners
+      +par(paragraphs.partners[0])
+      ul.logos-flex-container
         +flexImg(honey)
         +flexImg(tala)
         +flexImg(fabfitfun)
@@ -80,27 +68,7 @@ block content
         +flexImg(dogtown, 'long')
         +flexImg(trustory)
 
-      </ul>
-
-    </div>
-
-
-    <p>In addition to a paid internship at one of Tech.LA's partner companies, Fellows will have the opportunity to talk and interact with Los Angeles tech leaders. In the past, Fellows have sat down with individuals like <strong>Jeff Morris Jr.</strong>, Director of Product and Revenue at Tinder and Venture Capitalist <strong>Laurent Grill</strong> from Luma Launch.</p>
-    <div class="bar"></div>
-    <div class="row">
-      <div class="column" id="vertical-center">
-        <h2><span class="highlight">Fireside Chat</span></h2>
-        p.
-          The Fellows listened to Jeff and his
-          experience working at Tinder. He
-          generously offered his time and
-          stayed after his presentation to talk
-          about tech in Los Angeles.
-      </div>
-      <div class="column center" style="">
-        <img id="fireside-pic" src="img/media17/techla-tinder.png"></img>
-      </div>
-  </div>
-  .bar
-  include includes/blurb
-  </div>
+    +par(paragraphs.partners[1])
+    +spotlight(spotlights.jeff)
+    
+    include includes/blurb
