@@ -259,6 +259,10 @@ nav {
   background-color: white;
   z-index: 999; }
 
+.redirect-screen {
+  height: 80vh;
+}
+
 .navlinks a {
   display: inline-block;
   margin: 0px 20px 0 0;
