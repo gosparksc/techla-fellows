@@ -8,35 +8,27 @@ block content
         <a id="button-right" target="_blank" href="https://medium.com/@TechLAFellows"><div id="less" class="hero-button">Meet the Fellows »</div></a>
     </div>
   </div>
-  <div class="banner">
-    <div class="banner-text">
+  .banner
+    .banner-text
       <h1><span id="counter-text">SUMMER 2019 APP CLOSES IN </span>
       <span id="days"></span>
       </h1>
-    </div>
-  </div>
-  <br>
-  <div class="primary-column">
-    <div class="fellows-image">
+  br
+  .primary-column
+    .fellows-image
       <img id="group-photo" src="img/media17/techla-group-photo.png"></img>
-    </div>
-    <div class="fellows-elevator">
-      <div class="floater">
-        <h2>What is Tech.LA Fellows?</h2>
+    .fellows-elevator
+      .floater
+        h2 What is Tech.LA Fellows?
         +par(paragraphs.whatisfellows)
-      </div>
-    </div>
-  </div>
-
-  <div class="bar"></div>
-    <div class="primary-column">
-      <div class="mission">
-        <div id="tighten">
+        
+    +bar
+    .primary-column
+      .mission
+        #tighten
           <img id="icon" src="img/techla-icon.png"></img>
-          <h2 id="">The Tech.LA Mindset</h2>
-        </div>
+          h2 The Tech.LA Mindset
         +par(paragraphs.mindset)
-      </div>
 
       .row.spacer
         .column
@@ -45,11 +37,9 @@ block content
           +value('Build', 'a family of talented, driven individuals who are proud of their work.')
           +value('Expose', "students to the unique qualities of Los Angeles' startup ecosystem.")
           +value('Impact', 'the local entrepreneurial community and set a new standard for tech in Los Angeles.')
-  </div>
 
-  <div class="background-image">
-    <h1 class="centerblock">Partnering Companies</h1>
-  </div>
+  .background-image
+    h1.centerblock Partnering Companies
 
   .primary-column
     .home-partners
@@ -67,6 +57,7 @@ block content
         +flexImg(lumi, 'small')
         +flexImg(dogtown, 'long')
         +flexImg(trustory)
+        +flexImg(playfull)
 
     +par(paragraphs.partners[1])
     +spotlight(spotlights.jeff)
