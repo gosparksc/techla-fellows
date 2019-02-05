@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  countdown('02/07/2019 11:59:59 PM');
+  countdown('02/10/2019 11:59:59 PM');
 
   $(document).ready(function () {
     var options = {

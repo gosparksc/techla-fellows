@@ -75,7 +75,7 @@ ul:hover {
   cursor: not-allowed; }
 
 #less {
-  background-color: transparent; }
+  background-color: rgba(0, 0, 0, 0); }
 
 #less:hover {
   background-color: rgba(255, 255, 255, 0.16); }
@@ -258,10 +258,6 @@ nav {
   padding: 20px 30px 15px 30px;
   background-color: white;
   z-index: 999; }
-
-.redirect-screen {
-  height: 80vh;
-}
 
 .navlinks a {
   display: inline-block;
@@ -477,6 +473,10 @@ footer {
   font-weight: 800 !important;
   opacity: .5;
   padding: 5px; }
+
+.redirect-screen {
+  height: 80vh;
+  width: 100%; }
 
 .article {
   background-color: #f9f9f9;
