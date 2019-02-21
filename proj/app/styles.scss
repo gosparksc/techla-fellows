@@ -127,6 +127,10 @@ ul {
 		border-radius: 5px;
 		background-color: #e55725;
 		color: white !important;
+
+	}
+	.nav-button {
+		cursor: not-allowed;
 	}
 
 	.nav-button:hover {
@@ -136,6 +140,7 @@ ul {
 #button-left {
 	display: inline-block;
 	margin-right: 10px;
+	cursor: not-allowed;
 }
 
 #button-right {

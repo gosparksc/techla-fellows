@@ -15,7 +15,7 @@ server:
 	brunch watch --server
 
 www:
-	now alias benstanfield.io www.benstanfield.io
+	now alias tech.la www.tech.la
 # if you just want to remove unnecessary local files: make {clean|nuke}
 clean:
 	rm -rf public
@@ -23,13 +23,11 @@ clean:
 nuke: clean
 	rm -rf node_modules
 
-# deploy: 
-# 	brunch build
-# 	now -p public
-
-# alias:
-# 	now alias ${CLIPBOARD} benstanfield.io
-# 	now alias benstanfield.io www.benstanfield.io
+deploy: 
+	brunch build
+	now -p public
+	now alias ${CLIPBOARD} tech.la
+	now alias tech.la www.tech.la
 
 # when ready to push up for production:make production
 # production:

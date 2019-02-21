@@ -53,7 +53,7 @@ mixin question(question)
 
 mixin flexImg(obj, preference)
     <li class="logos-flex-item">
-        a(href=obj.link)
+        a(target="_blank" href=obj.link)
             if (preference == 'square')
                 img(class='flex-square' src=obj.img)
             else if (preference == 'long')
