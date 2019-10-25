@@ -62,7 +62,7 @@ ul {
 	}
 
 .hero {
-	background: #476bdd url('img/media17/techla-beach.png') no-repeat center top;
+	background: #476bdd url('img/header.jpg') no-repeat center top;
 	height: 100%;
 	width: 100%;
 	min-height: 50vh;
@@ -130,7 +130,7 @@ ul {
 
 	}
 	.nav-button {
-		cursor: not-allowed;
+		/*cursor: not-allowed;*/
 	}
 
 	.nav-button:hover {
@@ -140,7 +140,7 @@ ul {
 #button-left {
 	display: inline-block;
 	margin-right: 10px;
-	cursor: not-allowed;
+	/*cursor: not-allowed;*/
 }
 
 #button-right {
@@ -364,9 +364,9 @@ nav {
 		display: block;
 	}
 
-	.apply { 
-		color: #ffd2c2 !important; 
-		font-weight: bold; 
+	.apply {
+		color: #ffd2c2 !important;
+		font-weight: bold;
 	}
 
   .norm:hover {
@@ -711,17 +711,17 @@ footer {
 	padding: 0;
 	margin-top: 80px;
 	list-style: none;
-	
+
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	
+
 	-webkit-flex-flow: row wrap;
 	justify-content: space-around;
   }
-  
+
   .logos-flex-item {
 	width: 200px;
 	height: 50px;
@@ -750,11 +750,11 @@ footer {
 			width: 70px !important;
 			height: 70px !important;
 		}
-		
+
 		.flex-small {
 			height: 30px !important;
 		}
-  
+
 @media screen and (max-width: 970px) {
 	.logos-flex-item {
 		text-align: center;
@@ -862,7 +862,7 @@ footer {
     .home{
         margin-bottom: 80px;
 	}
-	
+
     .banner {
         visibility: hidden;
         margin-bottom: -80px;
